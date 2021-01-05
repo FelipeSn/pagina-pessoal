@@ -6,14 +6,35 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* .col-12{
+    padding: 0px;
+} */
 
 /* CLASSE MENU LATERAL */
+
+
+/* COR DO MENU MOBILE */
+.navbar{
+    background: #0e0f10 !important;
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link{
+    color: white !important;
+}
+
+
+.navbar-toggler{
+    background:#50555a;
+    float: right;
+}
+
 .sidebar {
     width: 150px;
     position: fixed;
     height: 100%;
     /*100% Utilizando do topo ao rodapé*/
     background: #1D1D22;
+    left: 0px;
 }
 
 /* COR MENU E ALINHAMENTO TEXTO */
@@ -80,11 +101,12 @@ body {
 }
 
 .title-with-border{
-    border-bottom: 1px solid #25ca7f;
+    /* border-bottom: 1px solid #25ca7f; */
     margin-bottom: 40px;
     text-align: center;
     padding-bottom: 5px;
     font-weight: bold;
+    color: #b1b1b1;
 }
 
 .my-location{
@@ -150,11 +172,12 @@ ul.timeline a{
 
 .habilidades span .progress{
     margin-top: 10px;
-    background-color:  #0e0f10;
+    background-color:  #0e0f10 !important;
 }
 
 .habilidades .progress-bar{
     background-color:  #25ca7f;
+    color: #0e0f10;
 }
 
 .card{
@@ -200,15 +223,60 @@ font-size: 32px;
 margin-bottom: 12px;
 }
 
+.padding-element{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.navbar{
+    display: none;
+}
+
+
 @media (max-width: 600px){
     #list-tab{
         display: none;
     }
+    .navbar{
+        display: block;
+    }
     .content-site{
         margin-left: 0px;
     }
+    .padding-element{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .tab-pane{
+        padding-top: 70px;
+    }
+    .card{
+        margin-bottom: 20px;
+    }
 }
 
-@media (min-width: 800px) and (max-width: 1000px){
 
+@media (min-width:1300px){
+    .padding-element{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+}
+
+
+@media (max-width: 950px){
+    /* .media{
+        display: block;
+    } */
+    .media img{
+        display: none;
+    }
+    .media-body{
+        text-align: center;
+    }
+
+    .card{
+        margin-bottom: 20px;
+    }
 }
